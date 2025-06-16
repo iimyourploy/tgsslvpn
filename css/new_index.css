@@ -1,3 +1,139 @@
-body{
-    background: rgb(230, 254, 246);
+/* Modern IT Security Style */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #0e1a2b;
+    color: #e3e6ea;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #14263d;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2d3e50;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-it img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-group h2 {
+    font-size: 1.5rem;
+    color: #00ffa3;
+    margin: 0;
+}
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-contact p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #b0c4d6;
+}
+
+#u257-4 {
+    font-weight: bold;
+    color: #00ffa3;
+}
+
+/* Signoff button */
+#u269-4 {
+    background-color: #ff3e3e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+#u269-4:hover {
+    background-color: #e02c2c;
+}
+
+/* Section headers */
+.content-download h3,
+.content-document h3 {
+    font-size: 1.2rem;
+    color: #00d6ff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Download links */
+a[href$=".msi"],
+a[href$=".dmg"],
+a[href$=".cab"],
+a[href$=".pdf"] {
+    display: block;
+    background-color: #1e2f46;
+    padding: 12px 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 4px solid #00ffa3;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a[href$=".msi"]:hover,
+a[href$=".dmg"]:hover,
+a[href$=".cab"]:hover,
+a[href$=".pdf"]:hover {
+    background-color: #29405e;
+    transform: translateX(5px);
+}
+
+/* Footer */
+.footer {
+    background-color: #101f33;
+    padding: 20px 0;
+    border-top: 1px solid #2e3f55;
+}
+
+.verticalspacer {
+    height: 50px;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-group {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-group h2 {
+        font-size: 1.2rem;
+    }
+
+    a[href$=".msi"],
+    a[href$=".dmg"],
+    a[href$=".cab"],
+    a[href$=".pdf"] {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
 }
