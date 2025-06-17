@@ -162,7 +162,7 @@ a[href$=".pdf"] {
     margin: 12px 0;
     color: #ffffff;
     text-decoration: none;
-    border-left: 4px solid #b63cff;
+    border-left: 5px solid #b63cff;
     border-radius: 6px;
     transition: background 0.3s, transform 0.2s;
 }
