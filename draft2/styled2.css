@@ -1,0 +1,213 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1)),
+        url('787_bg_plane.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: #0a0a1f;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+hr{
+    opacity: 0.3;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(30, 0, 60, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    flex-wrap: nowrap;
+}
+
+.logo-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1;
+    min-width: 0;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-it img {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 5px #b36bff);
+}
+
+.logo-group h1 {
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    color: #c799ff;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg,#ff4b7d,#b63cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    color: #c4b7e7;
+    opacity: 0.85;
+}
+
+.phone-icon {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#u257-4 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Signoff Button */
+#u269-4 {
+    /* background: linear-gradient(135deg, #ff4b7d, #b63cff); */
+    background: #b73cffd2;
+    color: rgba(256, 256, 256, 1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(184, 85, 255, 0.3);
+}
+
+#u269-4:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 18px rgba(184, 85, 255, 0.5);
+}
+
+.content-download{
+    margin: 0px 40px;
+}
+
+.content-download h3,
+.content-document h3 {
+    color: #d181ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+}
+
+.content-document {
+    padding: 0px 40px;
+    margin-bottom: 30px;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+}
+
+.document-grid a {
+    background: #1a112c;
+    padding: 16px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 4px solid #9c5bff;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    display: block;
+}
+
+.document-grid a:hover {
+    background: #291a42;
+    transform: translateY(-2px);
+}
+
+.document-grid{
+    margin-bottom: 0px;
+}
+
+.document-grid .document-title{
+    margin-top: 0px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+@media (max-width: 1024px) {
+    .document-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .document-grid h3{
+        font-size: 2rem;
+    }
+}
+
+/* Download links */
+a[href$=".msi"],
+a[href$=".dmg"],
+a[href$=".cab"],
+a[href$=".pdf"]{
+    display: block;
+    background: rgba(46, 24, 89, 0.7);
+    backdrop-filter: blur(3px);
+    padding: 14px 24px;
+    margin: 12px 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 5px solid #b63cff;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+a[href$=".msi"]:hover,
+a[href$=".dmg"]:hover,
+a[href$=".cab"]:hover,
+a[href$=".pdf"]:hover {
+    background: rgba(73, 39, 141, 0.7);
+    transform: translateX(8px);
+}
+
+/* Footer */
+.footer {
+    background-color: #120726;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    padding: 20px;
+    padding: 30px 0px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.7rem;
+    opacity: 0.6;
+    color: #e0d6f6;
+    font-size: clamp(0.65rem, 1vw, 0.8rem);
+}
+
+.verticalspacer {
+    height: 60px;
+}

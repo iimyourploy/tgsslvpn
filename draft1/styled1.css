@@ -1,14 +1,14 @@
+/* code ส่วน body เข้าไปแก้ที่ index.html (background) */
 body {
     margin: 0;
     font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
-    /* background-color: #0a0a1f; */
+    background-color: #0a0a1f;
     color: #ffffff;
     line-height: 1.6;
-    /* background-image: url('787_bg_plane.jpg'); */
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),url('787_bg_plane.jpg');
+    /* background-image:  linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)),url('images/787_bg2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
-    background-size: cover;
+    background-size: cover;  */
 }
 
 hr{
@@ -54,7 +54,7 @@ hr{
     margin: 0;
     font-weight: 700;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg,#ff4b7d,#b63cff);
+    background: linear-gradient(135deg, #ff4b7d, #b63cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
