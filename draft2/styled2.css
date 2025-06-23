@@ -41,7 +41,7 @@ hr{
     position: sticky;
     top: 0;
     z-index: 999;
-    background: rgba(30, 0, 60, 0.5);
+    background: rgba(30, 0, 60, 0.7);
     backdrop-filter: blur(10px);
     padding: 16px 40px;
     display: flex;
@@ -136,19 +136,11 @@ hr{
     margin-bottom: 30px;
 }
 
-.content-document .install-guide{
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-    background: rgba(0, 0, 0, 0.5);
-    width: fit-content;
-    padding: 5px 15px;
-    margin-top: 10px;
-    border-radius: 6px;
-}
-
 .document-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
+	margin-bottom: 0px;
 }
 
 .document-grid a {
@@ -165,10 +157,6 @@ hr{
 .document-grid a:hover {
     background: #291a42;
     transform: translateY(-2px);
-}
-
-.document-grid{
-    margin-bottom: 0px;
 }
 
 .document-grid .document-title{
@@ -194,7 +182,6 @@ a[href$=".pdf"]{
     background: rgba(46, 24, 89, 0.7);
     backdrop-filter: blur(3px);
     padding: 14px 24px;
-    margin: 12px 0;
     color: #ffffff;
     text-decoration: none;
     border-left: 5px solid #b63cff;
