@@ -5,14 +5,21 @@ body {
     color: #ffffff;
     line-height: 1.6;
     font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-    background-image: url('/css/787_bg_plane.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-color: #0a0a1f;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-image: url('plane_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    will-change: transform;
 }
 
 hr{
@@ -124,39 +131,33 @@ hr{
 
 .document-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
 	margin-bottom: 0px;
 }
 
 .document-grid a {
-    background: #1a112c;
-    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(46, 24, 89, 0.7);
+    backdrop-filter: blur(3px);
+    padding: 14px 24px;
     color: #ffffff;
     text-decoration: none;
-    border-left: 4px solid #9c5bff;
+    border-left: 5px solid #b63cff;
     border-radius: 6px;
     transition: background 0.3s, transform 0.2s;
-    display: block;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    width: 30vw;
 }
 
 .document-grid a:hover {
-    background: #291a42;
-    transform: translateY(-2px);
+    background: rgba(73, 39, 141, 0.7);
+    transform: translateX(8px);
 }
 
 .document-grid .document-title{
     margin-top: 0px;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
-}
-
-@media (max-width: 1024px) {
-    .document-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .document-grid h3{
-        font-size: 2rem;
-    }
 }
 
 /* Download links */
@@ -165,7 +166,7 @@ a[href$=".dmg"],
 a[href$=".cab"],
 a[href$=".pdf"]{
     display: block;
-    background: rgba(46, 24, 89, 0.7);
+    background: rgba(46, 24, 89, 0.5);
     backdrop-filter: blur(3px);
     padding: 14px 24px;
     color: #ffffff;
@@ -186,7 +187,7 @@ a[href$=".msi"]:hover,
 a[href$=".dmg"]:hover,
 a[href$=".cab"]:hover,
 a[href$=".pdf"]:hover {
-    background: rgba(73, 39, 141, 0.7);
+    background: rgba(34, 18, 67, 0.8);
     transform: translateX(8px);
 }
 
@@ -194,11 +195,13 @@ a[href$=".pdf"]:hover {
   font-size: clamp(0.8rem, 1.2vw, 1rem);
   font-weight: 500;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .document-for {
   font-size: 0.9rem;
   color: #d9d9d9;
+  margin-top: 0px;
 }
 
 /* Footer */
